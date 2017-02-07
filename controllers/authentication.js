@@ -12,7 +12,7 @@ exports.signup = function(req, res, next) {
   const password = req.body.password;
 
   if (!email || !password) {
-    return res.status(422).send({ errr: 'You must provide username and password' })
+    return res.status(422).send({ error: 'You must provide username and password' })
   }
 
   // See if user with given email exists
